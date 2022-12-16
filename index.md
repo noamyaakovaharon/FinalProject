@@ -38,6 +38,7 @@ I downloaded a csv file of SVI data for every census tract in Florida. The SVI d
 
 <img src="OverallSVI.png" width = "500" >
   
+
   
   
 2. <a href="https://msc.fema.gov/portal/advanceSearch#searchresultsanchor"> National Flood Hazard Layer </a> - FEMA, Last updated November 11, 2022.
@@ -52,7 +53,47 @@ Since shapefiles already contain geometries, I did not have to convert the origi
 
 <img src="FEMAZones.png" width = "500" >
   
-  
 
+3. <a href="https://floridadep.gov/water/domestic-wastewater/content/wastewater-facility-information"> Florida Wastewater Facilities (Industrial and Domestic) </a> - Florida DEP, Last updated October 31st, 2022. 
+
+**Data Description** 
+  
+The Florida Department of Environmental Protection has prepared a database of wastewater facilities across the state. The database is contributed to by the regional DEP offices in Florida. The site provides a csv file for different types of facilities. Although domestic wastewater facilities serve non-industrial purposes, many of them handle enough waste to generate a toxic release during flooding. Therefore, I decided to include both the industrial and domestic wastewater facilities in my analysis. The datasets include the names, addresses, capacities, and status of activity for each facility in Florida (around 6,000 total). 
+ 
+ **Data Cleaning and Methodology** 
+  
+After filtering the data to Hillsborough County, I merged the two datasets and deleted any duplicate facilities (there were about 15). Since there was no locational data attached to the facilities, I had to geocode the merged dataset using the addresses provided by DEP. Many of the addresses in the data were incomplete and therefore returning poor or no results after running the geocoder. I manually cleaned most of the addresses using google maps as a reference, dropping addreesses of facilities that no longer existed or were inactive. I got a 97% and above match for all but 5 of the 294 addresses. Those 5 addresses were located, according to the original addresses, outside of Hillsborough County, and therefore dropped. After dropping some more duplicates and faulty addresses, I was left with 291 domestic and industrial wastewater facilities and their coordinates/geometries in a geodataframe. Wastewater facilities comprise the vast majority of all the facilities being explored in this analysis. However, they are not theonly type of facilities that store or manage hazardous materials. I therefore had to bring in more facility datasets.  
+ 
+4.   <a href="https://koordinates.com/layer/110586-florida-hurricane-facilities-of-concern/"> Florida Hurricane Facilities of Concern </a> - Koordinates from Florida DEP, Last updated September 29, 2022. 
+  
+**Data Description**  
+  
+The Florida Hurricane Facilities of Concern dataset identifies facilities across the state that store or manage hazardous waste. These facilities are highlighted for their potential to release hazardous materials during a large flooding event such as a hurricane. The dataset was prepared by Florida DEP but was downloaded from a site called "Koordinates" which claimed to have more updated information than the DEP itself. After some research I found that this source is credible and may have had someone from the DEP update it before updating the DEP GIS maps. Facilities of concern include "Treatment, Storage, and Disposal facilities (TSDs) that are permitted to manage hazardous waste; hazardous waste transfer facilities where hazardous waste may be stored or staged for up to 10 days; used oil transfer facilities where used oil may be stored or staged for up to 35 days; and large quantity generators (LQGs) of hazardous waste that generate more than 1000kg of hazardous waste in any one month and may store their hazardous waste for up to 90 days (DEP)." Note: Moving forward I will refer to all facilities in my analysis as "facilities of concern," not be confused with this datatset. 
+  
+**Data Cleaning and Methodology** 
+ 
+I downloaded a csv for all facilities of concern in Florida. The dataset included latitude and longitude coordinates which made it easy to convert into a geodataframe to create a point layer. The data was then filtered to Hillsborough County. Some columns were dropped and others were renamed to make the data more legible. There were a total of 60 facilities identified after cleaning the dataset. This dataset will be merged with the wastewater facilities list to create a growing dataset of all facilities in Hillsborough County that can be a threat during flooding.              
+
+  
+5. <a href="https://www.epa.gov/toxics-release-inventory-tri-program "> Toxic Release T Facilities </a> - EPA, 2021 Data. 
+  
+ **Data Description**
+  
+The Toxic Release Inventory (TRI) developed by the EPA is "a resource for learning about toxic chemical releases and pollution prevention activities reported by industrial and federal facilities." While not all facilities have experienced an accidental toxic release in the past, all facilities in this database store hazardous materials and do have the potential to release toxic substances into the environment. The database allows someone to search for facilities at different geographical levels for different years. The inventory also allows for the filtering of facilities based on the materials stored and other variables related to hazardous material capacity. Since I wanted the most up-to-date information, I searched for all TRI facilities in Hillsbroough County for 2021. 
+  
+ **Data Cleaning and Methodology** 
+  
+The TRI provided an option to download information about the facilities as a csv file with lat/long coordinates attached. The coordinates made it easy to convert the data to a geodataframe. The geodataframe was then projected to the local coordinate system that I had assigned all the previous data layers. In total, there were 68 TRI facilities. This dataset will be merged together with the "Facilities of Concern" dataset as well as the wastewater facilities list to create a master dataset of all facilities of concern. 
+  
+  
+**Merging all facilities**
+  
+The process of merging all facility datasets and cleaning them to remove duplicates took most of my time for this project. First, I merged just the "Facilities of Concern" and TRI facilities datasets together to check for any duplicates. There were indeed duplicates which had to be manually checked for. This was done by displaying both datasets on an interactive map and using the name and address fields to find any overlapping information. After identifying and dropping the duplicates between the two datasets, I was left with 108 facilities. I was then ready to merge this new dataset to the wastewater facilities list. It took a while to identify the 30 or so duplicate facilities that existed between the datasets. While I was aware that there would be overlap, I did not anticipate how difficult it would be to locate. This was mainly because the 3 original datasets had no fields in common. All ID fields used a different alphanumeric system and thus could not be checked by code for duplicates. THe formatting of the name and address fields were also different among the datasets, leaving no choice but to manually check for duplicates. While this process was time consuming, I think it is crucuial to build a master list of all facilities of concnern in order to conduct a thorough analysis that captures the realities of Hillsborough County. After cleaning the master dataset, there was 354 facilities of concern identified ranging from wastewater facilities to oil tankers and manufacturing plants, among others. 
+  
+  
+  
+  
 </p>
 </details>
+
+Site and maps created by <a href="mailto:noamyaakovaharon@gmail.com">Noam Aharon</a> for 34:970:651 Command-Line GIS, Edward J. Bloustein School of Planning and Public Policy, Rutgers University, Fall 2022. 
