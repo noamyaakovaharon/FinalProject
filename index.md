@@ -12,7 +12,7 @@ I will first introduce the datasets used in this project and describe the methdo
 <details><summary>Data Description and Methodology</summary>
 <p>
 
-1. [Social Vulnerability Index by Census Tract](https://www.atsdr.cdc.gov/placeandhealth/svi/interactive_map.html) - CDC, 2020. 
+1. <a href="https://www.atsdr.cdc.gov/placeandhealth/svi/interactive_map.html"> Social Vulnerability Index by Census Tract </a> - CDC, 2020. 
   
 **Data Description** 
   
