@@ -38,6 +38,8 @@ I downloaded a csv file of SVI data for every census tract in Florida. The SVI d
 
 <img src="OverallSVI.png" width = "500" >
   
+  
+  
 2. <a href="https://msc.fema.gov/portal/advanceSearch#searchresultsanchor"> National Flood Hazard Layer </a> - FEMA, Last updated November 11, 2022.
   
 **Data Description** 
