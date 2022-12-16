@@ -36,7 +36,7 @@ The SVI can help determine a community's level of prepardness and resiliency to 
 
 I downloaded a csv file of all census tracts in Florida attached to SVI data. The SVI data includes all the variables that go in to calculatiing the overall SVI ranking. Since I'm only interested in the overall SVI, I dropped most of the columns from the csv. I then filtered the dataset to Hillsborough County and joined the dataset to another dataset that includes the geometries of the census tracts in Hillsborough County. Census tracts that were located in the water were dropped from the geometry. Below is a choropleth map displaying the SVI values for every census tract in Hillsborough County. The dark blue census tracts (SVI of .75 and above) is identified as one of the two hazard layers that will be used to conduct the analysis.    
 
-![Overall SVI]OverallSVI.png
+![Overall SVI](OverallSVI.png)
   
   2. [National Flood Hazard Layer](https://msc.fema.gov/portal/advanceSearch#searchresultsanchor) - FEMA, 2022
   
