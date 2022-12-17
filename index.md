@@ -75,7 +75,7 @@ The Florida Hurricane Facilities of Concern dataset identifies facilities across
 I downloaded a csv for all facilities of concern in Florida. The dataset included latitude and longitude coordinates which made it easy to convert into a geodataframe to create a point layer. The data was then filtered to Hillsborough County. Some columns were dropped and others were renamed to make the data more legible. There were a total of 60 facilities identified after cleaning the dataset. This dataset will be merged with the wastewater facilities list to create a growing dataset of all facilities in Hillsborough County that can be a threat during flooding.              
 
   
-5. <a href="https://www.epa.gov/toxics-release-inventory-tri-program "> Toxic Release T Facilities </a> - EPA, 2021 Data. 
+5. <a href="https://www.epa.gov/toxics-release-inventory-tri-program "> Toxic Release Inventory Facilities </a> - EPA, 2021 Data. 
   
  **Data Description**
   
@@ -94,6 +94,39 @@ The process of merging all facility datasets and cleaning them to remove duplica
  
 Each facility will be given a score from 0 to 2 depending on its location in relation to the two hazard zones defined earlier. The first hazard zone is any census tract with a .75 SVI and above. The second hazard zone is any flood zone that starts with the letter "A" or "V" A facility that is located in niether of those zones will be given a score of 0, denoting that the facility poses a low-level threat. A facility that falls in either one of the zones will be given a score of 1, denoting that the facility poses a level of moderate threat. Facilities that are located in vulnerable communities are considered a threat since vulnerable communities will have fewer resources to deal with a potential toxic release. Facilities that are located in high-risk flood zones are considered a threat since intense flooding increases the likelihood of toxic release and the long distance travel of toxic materials. A facility that falls both in a high svi tract and a high-risk flood zone will receive a score of 2, considering that facility a high-level threat. The intersecting areas of the two hazards zones will also be identified in the following static and interactive maps. This will give vieweres a sense of where these hazard zones are and why each facility was given the score that it has. 
     
+</p>
+</details>
+
+
+<details><summary>Results (Static Maps)</summary>
+<p>
+
+***Identifying which facilities lie in high SVI tracts***
+  
+<img src="Facilities_HighSVI.png" width = "500" >
+  
+ 
+***Identifying which facilities lie in high-risk flood zones***
+
+ <img src="Facilities_HighFlood.png" width = "500" >
+  
+***Identifying which facilities lie in both hazard zones***
+
+ <img src="HighRiskFacilities.png" width = "500" >
+  
+ 
+We see that the high-risk/high-threat facilities are located on the eastern shores of Hillsborough Bay. This area is marked by High SVI census tracts and is suceptible to flooding from the bay. The underlying blue areas in the last map represent the areas in which the two hazard zones intersect. Since it could not be displayed easily on a static map, the scores of each facility will be included in the interactive map. 
+  
+ 
+The next 3 maps will show the high threat facilities over a choropleth of different Census Bureau variables. These variables include the percent of minority population, the percent of the population that is living at the 150% rate (or more), and the percent of population that is uninsured. These maps should not imply any concrete relationship between census tract characteristics and high-threat facilities. It is, however, interesting to explore whether or not the spatial pattern of facilities match the spaital patterns of census variables that are used to determine social vulnerability. 
+ 
+<div class="container"> 
+    <img src="Minority.png" width = "325" >
+    <img src="Poverty.png" width = "325" > 
+    <img src="Uninsured.png" width = "325" > 
+</div> 
+  
+  
 </p>
 </details>
 
