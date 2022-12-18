@@ -138,8 +138,7 @@ ranking for each Census variable and for each of the four themes, as well as an 
 </p>
 </details>
 
-<br>
-<br>
+
 <br>
 <br>
 <h2>Interactive Map Facilities of Concern and Hazard Zones</h2>   
