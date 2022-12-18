@@ -103,7 +103,7 @@ ranking for each Census variable and for each of the four themes, as well as an 
 
 <p>Each facility will be given a score from 0 to 2 depending on its location in relation to the two hazard zones defined earlier. The first hazard zone is any census tract with a .75 SVI and above. The second hazard zone is any flood zone that starts with the letter "A" or "V." A facility that is located in neither of those zones will be given a score of 0, denoting that the facility poses a low-level threat. A facility that falls in either one of the zones will be given a score of 1, denoting that the facility poses a moderate level threat. Facilities that are located in vulnerable communities are considered a threat since vulnerable communities have fewer resources to deal with a potential toxic release. Facilities that are located in high-risk flood zones are considered a threat since intense flooding increases the likelihood of toxic release and the long-distance travel of toxic materials. A facility that falls both in a high SVI tracts and a high-risk flood zones will receive a score of 2, defining that facility a high-level threat. The intersecting areas of the two hazards zones will also be identified in the following static and interactive maps. This will give viewers a sense of where these hazard zones are and why each facility was given the score that it has.</p>
     
-
+</p>
 </details>
 
 
