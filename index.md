@@ -17,7 +17,7 @@ I will first introduce the datasets used in this project and describe the method
 
 <p><b>Data Description</b></p> 
   
-<em>What is Social Vulnerability?</em></p>   
+<em>What is Social Vulnerability?</em>  
   
 <p>"Every community must prepare for and respond to hazardous events, whether a natural disaster like a tornado
 or a disease outbreak, or an anthropogenic event such as a harmful chemical spill. The degree to which a
@@ -108,7 +108,7 @@ ranking for each Census variable and for each of the four themes, as well as an 
 
 
 <p><details><summary>Results (Static Maps)</summary></p>
-<p>
+
 
 <p><em>Identifying which facilities lie in high SVI tracts</em></p> 
   
@@ -135,7 +135,7 @@ ranking for each Census variable and for each of the four themes, as well as an 
 </div> 
   
   
-
+</p>
 </details>
 
 <p>Site and maps created by <a href="mailto:noamyaakovaharon@gmail.com">Noam Aharon</a> for 34:970:651 Command-Line GIS, Edward J. Bloustein School of Planning and Public Policy, Rutgers University, Fall 2022.</p> 
