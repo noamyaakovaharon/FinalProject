@@ -138,4 +138,6 @@ ranking for each Census variable and for each of the four themes, as well as an 
 </p>
 </details>
 
+<iframe src="map (12).html" height="855" width="100%"></iframe>
+
 <p>Site and maps created by <a href="mailto:noamyaakovaharon@gmail.com">Noam Aharon</a> for 34:970:651 Command-Line GIS, Edward J. Bloustein School of Planning and Public Policy, Rutgers University, Fall 2022.</p> 
