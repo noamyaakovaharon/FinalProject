@@ -18,19 +18,19 @@ I will first introduce the datasets used in this project and describe the method
   
 <em>What is Social Vulnerability?</em></p>  
   
-"Every community must prepare for and respond to hazardous events, whether a natural disaster like a tornado
+<p>"Every community must prepare for and respond to hazardous events, whether a natural disaster like a tornado
 or a disease outbreak, or an anthropogenic event such as a harmful chemical spill. The degree to which a
 community exhibits certain social conditions, including high poverty, low percentage of vehicle access, or
 crowded households, may affect that community’s ability to prevent human suffering and financial loss in the
-event of disaster. These factors describe a community’s social vulnerability (CDC)."
+event of disaster. These factors describe a community’s social vulnerability (CDC)."</p>
 
 <em>What is CDC Social Vulnerability Index?</em></p> 
   
-"SVI indicates the relative vulnerability of every U.S. Census tract. SVI ranks the tracts on 15 social factors, including unemployment,
+<p>"SVI indicates the relative vulnerability of every U.S. Census tract. SVI ranks the tracts on 15 social factors, including unemployment,
 minority status, and disability, and further groups them into four related themes. Thus, each tract receives a
-ranking for each Census variable and for each of the four themes, as well as an overall ranking (CDC)." The scale goes from 0 to 1 (low to high social vulnerability). The CDC/ATSDR has prepared the SVI based on variables and data collected by the US Census Bureau.
+ranking for each Census variable and for each of the four themes, as well as an overall ranking (CDC)." The scale goes from 0 to 1 (low to high social vulnerability). The CDC/ATSDR has prepared the SVI based on variables and data collected by the US Census Bureau.</p>
  
-The SVI can help determine a community's level of preparedness and resiliency to deal with a human or natural disaster. For the purposes of this analysis, I am interested in identifying the most socially vulnerable communities in Hillsborough County, Florida, to explore their proximity to facilities of concern. According to the CDC's interactive SVI map, census tracts with an overall SVI ranking of .75 and above are considered areas with high social vulnerability. Census tracts with .75 SVI or higher will become one of the two hazard zones or areas that is defined for the analysis. These hazard zones/areas are places where the harmful effects of toxic releases from facilities of concern are exacerbated.
+</p>The SVI can help determine a community's level of preparedness and resiliency to deal with a human or natural disaster. For the purposes of this analysis, I am interested in identifying the most socially vulnerable communities in Hillsborough County, Florida, to explore their proximity to facilities of concern. According to the CDC's interactive SVI map, census tracts with an overall SVI ranking of .75 and above are considered areas with high social vulnerability. Census tracts with .75 SVI or higher will become one of the two hazard zones or areas that is defined for the analysis. These hazard zones/areas are places where the harmful effects of toxic releases from facilities of concern are exacerbated.</p>
 
 <b>Data Cleaning and Methodology</b>
 
