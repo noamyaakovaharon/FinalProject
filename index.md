@@ -16,7 +16,7 @@ I will first introduce the datasets used in this project and describe the method
   
 **Data Description** 
   
-*What is Social Vulnerability?*
+  <b>What is Social Vulnerability?</b>
   
 "Every community must prepare for and respond to hazardous events, whether a natural disaster like a tornado
 or a disease outbreak, or an anthropogenic event such as a harmful chemical spill. The degree to which a
@@ -38,7 +38,9 @@ I downloaded a csv file of SVI data for every census tract in Florida. The SVI d
   
 <img src="OverallSVI.png" width = "500" >
   
-
+<br> 
+  
+  
   
   
 <a href="https://msc.fema.gov/portal/advanceSearch#searchresultsanchor"> National Flood Hazard Layer </a> - FEMA, Last updated November 11, 2022.
