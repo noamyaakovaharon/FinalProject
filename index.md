@@ -25,7 +25,7 @@ community exhibits certain social conditions, including high poverty, low percen
 crowded households, may affect that community’s ability to prevent human suffering and financial loss in the
 event of disaster. These factors describe a community’s social vulnerability (CDC)."</p>
 
-<em>What is CDC Social Vulnerability Index?</em></p>
+<em>What is CDC Social Vulnerability Index?</em>
   
 <p>"SVI indicates the relative vulnerability of every U.S. Census tract. SVI ranks the tracts on 15 social factors, including unemployment,
 minority status, and disability, and further groups them into four related themes. Thus, each tract receives a
@@ -93,33 +93,33 @@ ranking for each Census variable and for each of the four themes, as well as an 
 <p><img src="TRIFacilities.png" width = "500" ></p>
   
   
-<em>Merging all facilities</em></p> 
+<p><em>Merging all facilities</em></p> 
                                                              
 <p>The process of merging all facility datasets and cleaning them to remove duplicates took most of my time for this project. First, I merged just the Facilities of Concern and TRI facilities datasets together to check for any duplicates. This was done by displaying both datasets on an interactive map and using the name and address fields to find any overlapping information. After identifying and dropping the duplicates between the two datasets, I was left with 108 facilities. I was then ready to merge this new dataset to the wastewater facilities list. It took a while to identify the 30 or so duplicate facilities that existed between the datasets. While I was aware that there would be some overlap, I did not anticipate how difficult it would be to locate. This was mainly because the 3 original datasets had no fields in common. All ID fields used a different alphanumeric system and thus could not be checked by code for duplicates. The formatting of the name and address fields were also different among the datasets, leaving no choice but to manually check for duplicates. While this process was time consuming, I think it is crucial to build a master list of all facilities of concern in order to conduct a thorough analysis that captures the realities of Hillsborough County. After cleaning the final dataset, there was 354 facilities of concern identified. These facilities range from wastewater facilities to oil tankers and manufacturing plants, among others. Since the datasets were messy, I was unfortunately unable to display the facilities by the type of materials they manage or the purpose they serve.</p>
 
 <p><img src="All_Facilities.png" width = "500" ></p>
   
-<em>Calculating threat score for facilities</em></p> 
+<p><em>Calculating threat score for facilities</em></p> 
 
 <p>Each facility will be given a score from 0 to 2 depending on its location in relation to the two hazard zones defined earlier. The first hazard zone is any census tract with a .75 SVI and above. The second hazard zone is any flood zone that starts with the letter "A" or "V." A facility that is located in neither of those zones will be given a score of 0, denoting that the facility poses a low-level threat. A facility that falls in either one of the zones will be given a score of 1, denoting that the facility poses a moderate level threat. Facilities that are located in vulnerable communities are considered a threat since vulnerable communities have fewer resources to deal with a potential toxic release. Facilities that are located in high-risk flood zones are considered a threat since intense flooding increases the likelihood of toxic release and the long-distance travel of toxic materials. A facility that falls both in a high SVI tracts and a high-risk flood zones will receive a score of 2, defining that facility a high-level threat. The intersecting areas of the two hazards zones will also be identified in the following static and interactive maps. This will give viewers a sense of where these hazard zones are and why each facility was given the score that it has.</p>
     
-</p>
+
 </details>
 
 
-<details><summary>Results (Static Maps)</summary>
+<p><details><summary>Results (Static Maps)</summary></p>
 <p>
 
-<em>Identifying which facilities lie in high SVI tracts</em></p> 
+<p><em>Identifying which facilities lie in high SVI tracts</em></p> 
   
 <p><img src="Facilities_HighSVI.png" width = "500" ></p>
   
  
-<em>Identifying which facilities lie in high-risk flood zones</em></p> 
+<p><em>Identifying which facilities lie in high-risk flood zones</em></p> 
 
 <p><img src="Facilities_HighFlood.png" width = "500" ></p>
   
-<em>Identifying which facilities lie in both hazard zones</em></p> 
+<p><em>Identifying which facilities lie in both hazard zones</em></p> 
 
 <p><img src="HighRiskFacilities.png" width = "500" ></p>
   
@@ -135,7 +135,7 @@ ranking for each Census variable and for each of the four themes, as well as an 
 </div> 
   
   
-</p>
+
 </details>
 
-Site and maps created by <a href="mailto:noamyaakovaharon@gmail.com">Noam Aharon</a> for 34:970:651 Command-Line GIS, Edward J. Bloustein School of Planning and Public Policy, Rutgers University, Fall 2022. 
+<p>Site and maps created by <a href="mailto:noamyaakovaharon@gmail.com">Noam Aharon</a> for 34:970:651 Command-Line GIS, Edward J. Bloustein School of Planning and Public Policy, Rutgers University, Fall 2022.</p> 
