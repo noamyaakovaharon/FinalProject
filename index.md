@@ -6,7 +6,7 @@ Industrial and commercial facilities that manage hazardous materials can become 
 
 Residents of Hillsborough County, in Western Florida, have been hit hard this past year by a series of hurricanes and tropical storms resulting in widescale flooding. After the storms subsided, it was discovered that much of the flood water was contaminated with a slew of toxic chemicals and materials coming from wastewater treatment plants, oil tankers, and manufacturing facilities. To improve the preparedness and resiliency of communities in regard to flood-driven toxic releases, this project aims to identify facilities of concern (defined as facilities that can discharge hazardous materials during a flood) and determine the level of threat the facilities pose to surrounding communities. The threat that a facility poses will be determined by its proximity to socially vulnerable communities (defined by the CDC's SVI) and high-risk flood zones (defined by FEMA). City planners and legislators can use this information to reinforce certain facilities of concern, and more importantly, place measures in the most at-risk areas to prevent toxic releases from becoming a humanitarian disaster.
 
-I will first introduce the datasets used in this project and describe the methodologies used to clean and manipulate the datasets for analysis. I will display static maps throughout the data/methodology section as well as the results section. Lastly, I will present an interactive web map showing the relationship between facilities of concern and the various hazard zones identified for the analysis. While it is recommended to read all sections and gain context prior to viewing the web map, you may jump to the web map by clicking HERE.
+I will first introduce the datasets used in this project and describe the methodologies used to clean and manipulate the datasets for analysis. I will display static maps throughout the data/methodology section as well as the results section. Lastly, I will present an interactive web map showing the relationship between facilities of concern and the various hazard zones identified for the analysis. While it is recommended to read all sections and gain context prior to viewing the web map, you may jump to the web map by clicking HERE. You can view this map [here](map (12).html)
 
 
 <details><summary>Data Description and Methodology</summary>
@@ -142,6 +142,7 @@ ranking for each Census variable and for each of the four themes, as well as an 
 <br>
 <br>
 <br>
+## Interactive Map - Facilities of Concern and Hazard Zones
 <iframe src="map (12).html" height="855" width="100%"></iframe>
 <br>
 
